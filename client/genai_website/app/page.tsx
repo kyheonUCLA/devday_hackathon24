@@ -4,24 +4,17 @@ import React, { useState } from "react";
 
 import FileUpload from "./components/FileUpload";
 import TitleBar from "./components/TitleBar";
+import Mic from "./components/Mic";
 
 
 export default function Home() {
-  // State to store the uploaded file
-  const [file, setFile] = useState(null);
+ const [text, setText] = useState("")
 
-  // Function to handle file upload
-  const handleFileUpload = (e: any) => {
-    const uploadedFile = e.target.files[0];
-    setFile(uploadedFile);
-  };
-
-  // Function to handle form submission
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    // Do something with the uploaded file (e.g., send it to the server)
-    console.log("Uploaded file:", file);
-  };
+  const onTextChange = (e: any) => {
+    e.preventDefault()
+    setText(e.target.value)
+  }
+ 
 
   return (
     <main className="flex min-h-screen flex-row items-center justify-center bg-gray-100">
@@ -30,16 +23,21 @@ export default function Home() {
         <TitleBar />
 
         <div className="bg-white p-8 rounded-lg shadow-md ">
-          <input
-            type="text"
-            className="w-64 text-black px-4 p-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400"
-          />
-          <button
-            onClick={handleSubmit}
-            className="mx-4 px-4 p-2 bg-green-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-400"
-          >
-            Search
-          </button>
+          <div className="flex flex-row items-center justify-center bg-white">
+            <input
+              onChange={onTextChange}
+              type="text"
+              className="w-64 text-black px-4 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400"
+            />
+            <button
+              onClick={() => {}}
+              className="mx-4 px-4 p-2 bg-green-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-400"
+            >
+              Search
+            </button>
+
+            <Mic />
+          </div>
           
           <FileUpload />
         </div>
