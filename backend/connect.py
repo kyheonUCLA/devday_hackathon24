@@ -4,6 +4,10 @@ from dotenv import load_dotenv
 from langchain.chains import RetrievalQA
 from langchain_community.retrievers import AmazonKnowledgeBasesRetriever
 from langchain_aws import BedrockLLM
+import ldclient
+from ldclient.config import Config
+from ldclient import Context
+from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
@@ -66,6 +70,19 @@ def ask():
         return jsonify({'result': output['result']})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+FLAG_SDK_KEY = os.getenv("FLAG_SDK_KEY")
+
+ldclient.set_config(Config(FLAG_SDK_KEY))
+
+client = ldclient.get()
+
+context = Context.builder("context-key-123abc").set("key", "youth").build()
+
+@app.route('/ld', methods=['GET'])
+def ld():
+    flag_value = client.variation("entitlement", context, False)
+    return flag_value
 
 if __name__ == '__main__':
     app.run(debug=True)
