@@ -25,3 +25,8 @@ hume[microphone]
 azure-ai-generative[index,evaluate,promptflow]
 azure-identity
 openai
+awscli
+boto3
+dotenv
+flask
+langchain-aws
