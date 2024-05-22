@@ -1,0 +1,759 @@
+[
+  {
+    "patient_id": "001",
+    "personal_information": {
+      "first_name": "Alice",
+      "last_name": "Smith",
+      "date_of_birth": "1980-04-12",
+      "gender": "Female",
+      "contact": {
+        "phone": "555-987-6543",
+        "email": "alice.smith@example.com",
+        "address": {
+          "street": "456 Elm St",
+          "city": "Othertown",
+          "state": "TX",
+          "zip_code": "75001"
+        }
+      }
+    },
+    "medical_history": {
+      "allergies": ["None"],
+      "current_medications": [
+        {
+          "name": "Amlodipine",
+          "dosage": "5mg",
+          "frequency": "Once daily"
+        }
+      ],
+      "past_medications": [
+        {
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "Once daily",
+          "start_date": "2018-01-01",
+          "end_date": "2019-01-01"
+        }
+      ],
+      "chronic_conditions": ["Hypertension"],
+      "surgeries": [
+        {
+          "type": "Tonsillectomy",
+          "date": "2000-06-20"
+        }
+      ],
+      "family_history": {
+        "father": {
+          "condition": "Hypertension",
+          "age_at_diagnosis": 50
+        },
+        "mother": {
+          "condition": "Osteoporosis",
+          "age_at_diagnosis": 65
+        }
+      },
+      "immunizations": [
+        {
+          "vaccine": "Influenza",
+          "date": "2023-09-20"
+        },
+        {
+          "vaccine": "COVID-19",
+          "date": "2021-05-15"
+        }
+      ]
+    },
+    "visits": [
+      {
+        "date": "2024-04-12",
+        "doctor": "Dr. Brown",
+        "reason": "Routine check-up",
+        "notes": "Blood pressure well controlled."
+      },
+      {
+        "date": "2023-10-10",
+        "doctor": "Dr. Wilson",
+        "reason": "Follow-up for hypertension",
+        "notes": "Switched from Lisinopril to Amlodipine."
+      }
+    ],
+    "labs_and_tests": [
+      {
+        "test": "Complete Blood Count (CBC)",
+        "date": "2024-03-25",
+        "results": {
+          "WBC": "5.5",
+          "RBC": "4.7",
+          "Hemoglobin": "14.0",
+          "Hematocrit": "42%"
+        }
+      },
+      {
+        "test": "Lipid Panel",
+        "date": "2024-01-15",
+        "result": "Total Cholesterol: 180 mg/dL"
+      }
+    ],
+    "outpatient_transcript": {
+      "date": "2024-04-12",
+      "transcript": "Dr. Brown: Hello Alice, how have you been?\n\nAlice Smith: Hi Dr. Brown, I've been doing well but I get occasional dizziness.\n\nDr. Brown: When does the dizziness occur?\n\nAlice Smith: Mostly in the mornings after I take my medication.\n\nDr. Brown: We may need to adjust the timing of your medication. Let's monitor it and follow up in a month.\n\nAlice Smith: Okay, I'll do that. Thank you."
+    }
+  },
+  {
+    "patient_id": "002",
+    "personal_information": {
+      "first_name": "Bob",
+      "last_name": "Jones",
+      "date_of_birth": "1972-11-30",
+      "gender": "Male",
+      "contact": {
+        "phone": "555-123-9876",
+        "email": "bob.jones@example.com",
+        "address": {
+          "street": "789 Pine St",
+          "city": "Somewhere",
+          "state": "NY",
+          "zip_code": "10001"
+        }
+      }
+    },
+    "medical_history": {
+      "allergies": ["Peanuts", "Shellfish"],
+      "current_medications": [
+        {
+          "name": "Metformin",
+          "dosage": "500mg",
+          "frequency": "Twice daily"
+        },
+        {
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "Once daily"
+        }
+      ],
+      "past_medications": [
+        {
+          "name": "Glyburide",
+          "dosage": "5mg",
+          "frequency": "Once daily",
+          "start_date": "2015-01-01",
+          "end_date": "2017-01-01"
+        }
+      ],
+      "chronic_conditions": ["Type 2 Diabetes", "Hyperlipidemia"],
+      "surgeries": [
+        {
+          "type": "Hernia Repair",
+          "date": "2010-07-15"
+        }
+      ],
+      "family_history": {
+        "father": {
+          "condition": "Type 2 Diabetes",
+          "age_at_diagnosis": 60
+        },
+        "mother": {
+          "condition": "Breast Cancer",
+          "age_at_diagnosis": 58
+        }
+      },
+      "immunizations": [
+        {
+          "vaccine": "Influenza",
+          "date": "2023-10-05"
+        },
+        {
+          "vaccine": "COVID-19",
+          "date": "2021-04-01"
+        }
+      ]
+    },
+    "visits": [
+      {
+        "date": "2024-03-15",
+        "doctor": "Dr. Harris",
+        "reason": "Diabetes follow-up",
+        "notes": "A1C level improved to 7.0%."
+      },
+      {
+        "date": "2023-09-10",
+        "doctor": "Dr. Harris",
+        "reason": "Cholesterol management",
+        "notes": "Started on Atorvastatin."
+      }
+    ],
+    "labs_and_tests": [
+      {
+        "test": "A1C",
+        "date": "2024-02-20",
+        "result": "7.0%"
+      },
+      {
+        "test": "Lipid Panel",
+        "date": "2023-08-25",
+        "result": "Total Cholesterol: 210 mg/dL"
+      }
+    ],
+    "outpatient_transcript": {
+      "date": "2024-03-15",
+      "transcript": "Dr. Harris: Hi Bob, how are you managing your diabetes?\n\nBob Jones: Hello Dr. Harris, I’ve been sticking to my diet and exercise plan, but my energy levels are still low.\n\nDr. Harris: It's good that you're following the plan. We might need to adjust your medication. Have you been monitoring your blood sugar levels?\n\nBob Jones: Yes, they are usually around 150-160 mg/dL in the mornings.\n\nDr. Harris: Let's try increasing your Metformin dosage and see if that helps.\n\nBob Jones: Alright, I’ll do that. Thank you."
+    }
+  },
+  {
+    "patient_id": "003",
+    "personal_information": {
+      "first_name": "Carol",
+      "last_name": "Lee",
+      "date_of_birth": "1990-02-25",
+      "gender": "Female",
+      "contact": {
+        "phone": "555-456-7890",
+        "email": "carol.lee@example.com",
+        "address": {
+          "street": "101 Maple St",
+          "city": "Newcity",
+          "state": "IL",
+          "zip_code": "60601"
+        }
+      }
+    },
+    "medical_history": {
+      "allergies": ["Latex"],
+      "current_medications": [
+        {
+          "name": "Levothyroxine",
+          "dosage": "50mcg",
+          "frequency": "Once daily"
+        }
+      ],
+      "past_medications": [
+        {
+          "name": "Ibuprofen",
+          "dosage": "200mg",
+          "frequency": "As needed",
+          "start_date": "2020-01-01",
+          "end_date": "2021-01-01"
+        }
+      ],
+      "chronic_conditions": ["Hypothyroidism"],
+      "surgeries": [
+        {
+          "type": "Gallbladder Removal",
+          "date": "2018-05-10"
+        }
+      ],
+      "family_history": {
+        "father": {
+          "condition": "Thyroid Disease",
+          "age_at_diagnosis": 50
+        },
+        "mother": {
+          "condition": "Arthritis",
+          "age_at_diagnosis": 55
+        }
+      },
+      "immunizations": [
+        {
+          "vaccine": "Influenza",
+          "date": "2023-09-15"
+        },
+        {
+          "vaccine": "COVID-19",
+          "date": "2021-03-20"
+        }
+      ]
+    },
+    "visits": [
+      {
+        "date": "2024-02-28",
+        "doctor": "Dr. Green",
+        "reason": "Thyroid function follow-up",
+        "notes": "Thyroid levels stable with current medication."
+      },
+      {
+        "date": "2023-08-05",
+        "doctor": "Dr. Green",
+        "reason": "Annual check-up",
+        "notes": "No significant issues."
+      }
+    ],
+    "labs_and_tests": [
+      {
+        "test": "TSH",
+        "date": "2024-01-30",
+        "result": "2.5 mIU/L"
+      },
+      {
+        "test": "Lipid Panel",
+        "date": "2023-07-15",
+        "result": "Total Cholesterol: 190 mg/dL"
+      }
+    ],
+    "outpatient_transcript": {
+      "date": "2024-02-28",
+      "transcript": "Dr. Green: Hello Carol, how are you feeling with the current dosage of Levothyroxine?\n\nCarol Lee: Hi Dr. Green, I'm feeling much better, but I still have some fatigue.\n\nDr. Green: Fatigue can be a lingering symptom. Have you been consistent with taking your medication every morning?\n\nCarol Lee: Yes, I take it every morning before breakfast.\n\nDr. Green: Good to hear. Let's continue with the current dosage and check your levels again in six months.\n\nCarol Lee: Sounds good. Thank you, Dr. Green."
+    }
+  },
+  {
+    "patient_id": "004",
+    "personal_information": {
+      "first_name": "David",
+      "last_name": "Kim",
+      "date_of_birth": "1965-05-15",
+      "gender": "Male",
+      "contact": {
+        "phone": "555-789-1234",
+        "email": "david.kim@example.com",
+        "address": {
+          "street": "202 Oak St",
+          "city": "Oldtown",
+          "state": "FL",
+          "zip_code": "32003"
+        }
+      }
+    },
+    "medical_history": {
+      "allergies": ["Sulfa drugs"],
+      "current_medications": [
+        {
+          "name": "Metoprolol",
+          "dosage": "50mg",
+          "frequency": "Twice daily"
+        },
+        {
+          "name": "Aspirin",
+          "dosage": "81mg",
+          "frequency": "Once daily"
+        }
+      ],
+      "past_medications": [
+        {
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "Once daily",
+          "start_date": "2017-01-01",
+          "end_date": "2018-01-01"
+        }
+      ],
+      "chronic_conditions": ["Hypertension", "Angina"],
+      "surgeries": [
+        {
+          "type": "Coronary Artery Bypass",
+          "date": "2015-04-25"
+        }
+      ],
+      "family_history": {
+        "father": {
+          "condition": "Coronary Artery Disease",
+          "age_at_diagnosis": 55
+        },
+        "mother": {
+          "condition": "Stroke",
+          "age_at_diagnosis": 70
+        }
+      },
+      "immunizations": [
+        {
+          "vaccine": "Influenza",
+          "date": "2023-10-01"
+        },
+        {
+          "vaccine": "COVID-19",
+          "date": "2021-05-20"
+        }
+      ]
+    },
+    "visits": [
+      {
+        "date": "2024-01-20",
+        "doctor": "Dr. Adams",
+        "reason": "Angina follow-up",
+        "notes": "Stable angina, medication adjusted."
+      },
+      {
+        "date": "2023-07-25",
+        "doctor": "Dr. Adams",
+        "reason": "Routine check-up",
+        "notes": "Blood pressure controlled."
+      }
+    ],
+    "labs_and_tests": [
+      {
+        "test": "Stress Test",
+        "date": "2023-12-15",
+        "result": "Normal"
+      },
+      {
+        "test": "Echocardiogram",
+        "date": "2023-11-10",
+        "result": "Mild left ventricular hypertrophy"
+      }
+    ],
+    "outpatient_transcript": {
+      "date": "2024-01-20",
+      "transcript": "Dr. Adams: Hi David, how have you been feeling?\n\nDavid Kim: Hello Dr. Adams, I've had some chest discomfort after heavy meals.\n\nDr. Adams: That can happen with angina. Are you taking your medications as prescribed?\n\nDavid Kim: Yes, I am.\n\nDr. Adams: Good. Let's try to adjust your Metoprolol dosage and monitor your symptoms.\n\nDavid Kim: Alright, thank you."
+    }
+  },
+  {
+    "patient_id": "005",
+    "personal_information": {
+      "first_name": "Emma",
+      "last_name": "White",
+      "date_of_birth": "1988-03-20",
+      "gender": "Female",
+      "contact": {
+        "phone": "555-321-7654",
+        "email": "emma.white@example.com",
+        "address": {
+          "street": "303 Birch St",
+          "city": "Nexttown",
+          "state": "OH",
+          "zip_code": "43215"
+        }
+      }
+    },
+    "medical_history": {
+      "allergies": ["None"],
+      "current_medications": [
+        {
+          "name": "Sertraline",
+          "dosage": "100mg",
+          "frequency": "Once daily"
+        }
+      ],
+      "past_medications": [
+        {
+          "name": "Fluoxetine",
+          "dosage": "20mg",
+          "frequency": "Once daily",
+          "start_date": "2016-01-01",
+          "end_date": "2018-01-01"
+        }
+      ],
+      "chronic_conditions": ["Depression"],
+      "surgeries": [
+        {
+          "type": "Appendectomy",
+          "date": "2002-11-05"
+        }
+      ],
+      "family_history": {
+        "father": {
+          "condition": "Depression",
+          "age_at_diagnosis": 45
+        },
+        "mother": {
+          "condition": "Hypertension",
+          "age_at_diagnosis": 50
+        }
+      },
+      "immunizations": [
+        {
+          "vaccine": "Influenza",
+          "date": "2023-10-10"
+        },
+        {
+          "vaccine": "COVID-19",
+          "date": "2021-06-05"
+        }
+      ]
+    },
+    "visits": [
+      {
+        "date": "2024-02-15",
+        "doctor": "Dr. Cooper",
+        "reason": "Depression follow-up",
+        "notes": "Medication effective, no major side effects."
+      },
+      {
+        "date": "2023-07-15",
+        "doctor": "Dr. Cooper",
+        "reason": "Annual check-up",
+        "notes": "General health is good."
+      }
+    ],
+    "labs_and_tests": [
+      {
+        "test": "Complete Blood Count (CBC)",
+        "date": "2024-01-10",
+        "results": {
+          "WBC": "5.8",
+          "RBC": "4.6",
+          "Hemoglobin": "13.9",
+          "Hematocrit": "41.5%"
+        }
+      },
+      {
+        "test": "Lipid Panel",
+        "date": "2023-06-20",
+        "result": "Total Cholesterol: 185 mg/dL"
+      }
+    ],
+    "outpatient_transcript": {
+      "date": "2024-02-15",
+      "transcript": "Dr. Cooper: Hi Emma, how are you feeling on Sertraline?\n\nEmma White: Hi Dr. Cooper, I feel much better, but I still have some anxiety.\n\nDr. Cooper: That's not uncommon. Are there specific situations that trigger your anxiety?\n\nEmma White: Mostly social situations and large gatherings.\n\nDr. Cooper: Let's consider adding a low-dose anxiety medication. We'll start with that and see how you feel.\n\nEmma White: Okay, thank you."
+    }
+  },
+    {
+      "patient_id": "007",
+      "personal_information": {
+        "first_name": "Grace",
+        "last_name": "Brown",
+        "date_of_birth": "1995-09-18",
+        "gender": "Female",
+        "contact": {
+          "phone": "555-987-6543",
+          "email": "grace.brown@example.com",
+          "address": {
+            "street": "505 Walnut St",
+            "city": "Smalltown",
+            "state": "TX",
+            "zip_code": "75002"
+          }
+        }
+      },
+      "medical_history": {
+        "allergies": ["None"],
+        "current_medications": [
+          {
+            "name": "Ethinyl Estradiol / Norgestimate",
+            "dosage": "0.035mg/0.25mg",
+            "frequency": "Once daily"
+          }
+        ],
+        "past_medications": [
+          {
+            "name": "Drospirenone / Ethinyl Estradiol",
+            "dosage": "3mg/0.03mg",
+            "frequency": "Once daily",
+            "start_date": "2018-01-01",
+            "end_date": "2019-01-01"
+          }
+        ],
+        "chronic_conditions": ["Polycystic Ovary Syndrome (PCOS)"],
+        "surgeries": [],
+        "family_history": {
+          "father": {
+            "condition": "Hypertension",
+            "age_at_diagnosis": 60
+          },
+          "mother": {
+            "condition": "Breast Cancer",
+            "age_at_diagnosis": 55
+          }
+        },
+        "immunizations": [
+          {
+            "vaccine": "Influenza",
+            "date": "2023-10-01"
+          },
+          {
+            "vaccine": "COVID-19",
+            "date": "2021-05-15"
+          }
+        ]
+      },
+      "visits": [
+        {
+          "date": "2024-05-05",
+          "doctor": "Dr. Parker",
+          "reason": "PCOS management",
+          "notes": "Symptoms improving with current treatment."
+        },
+        {
+          "date": "2023-11-20",
+          "doctor": "Dr. Parker",
+          "reason": "Contraception consultation",
+          "notes": "Prescribed Ethinyl Estradiol / Norgestimate."
+        }
+      ],
+      "labs_and_tests": [
+        {
+          "test": "Pelvic Ultrasound",
+          "date": "2024-04-20",
+          "result": "Multiple ovarian cysts observed"
+        },
+        {
+          "test": "Hemoglobin A1C",
+          "date": "2024-03-15",
+          "result": "6.2%"
+        }
+      ],
+      "outpatient_transcript": {
+        "date": "2024-05-05",
+        "transcript": "Dr. Parker: Hi Grace, how have you been feeling?\n\nGrace Brown: Hello Dr. Parker, I've been doing better, but I still experience irregular periods.\n\nDr. Parker: Have you noticed any other symptoms?\n\nGrace Brown: Yes, I've also had some acne and weight gain.\n\nDr. Parker: It sounds like your PCOS symptoms. Let's continue monitoring and adjusting your treatment as needed.\n\nGrace Brown: Alright, thank you."
+      }
+    },
+    {
+      "patient_id": "009",
+      "personal_information": {
+        "first_name": "Isabella",
+        "last_name": "Clark",
+        "date_of_birth": "1983-08-10",
+        "gender": "Female",
+        "contact": {
+          "phone": "555-321-7654",
+          "email": "isabella.clark@example.com",
+          "address": {
+            "street": "707 Oak St",
+            "city": "Littletown",
+            "state": "OH",
+            "zip_code": "43216"
+          }
+        }
+      },
+      "medical_history": {
+        "allergies": ["None"],
+        "current_medications": [
+          {
+            "name": "Fluoxetine",
+            "dosage": "20mg",
+            "frequency": "Once daily"
+          }
+        ],
+        "past_medications": [
+          {
+            "name": "Escitalopram",
+            "dosage": "10mg",
+            "frequency": "Once daily",
+            "start_date": "2018-01-01",
+            "end_date": "2019-01-01"
+          }
+        ],
+        "chronic_conditions": ["Depression"],
+        "surgeries": [],
+        "family_history": {
+          "father": {
+            "condition": "Depression",
+            "age_at_diagnosis": 50
+          },
+          "mother": {
+            "condition": "Breast Cancer",
+            "age_at_diagnosis": 55
+          }
+        },
+        "immunizations": [
+          {
+            "vaccine": "Influenza",
+            "date": "2023-10-01"
+          },
+          {
+            "vaccine": "COVID-19",
+            "date": "2021-05-15"
+          }
+        ]
+      },
+      "visits": [
+        {
+          "date": "2024-03-10",
+          "doctor": "Dr. Nelson",
+          "reason": "Depression follow-up",
+          "notes": "Stable mood, medication effective."
+        },
+        {
+          "date": "2023-09-20",
+          "doctor": "Dr. Nelson",
+          "reason": "Initial consultation",
+          "notes": "Started on Fluoxetine."
+        }
+      ],
+      "labs_and_tests": [
+        {
+          "test": "Thyroid Function Test",
+          "date": "2024-02-25",
+          "result": "Normal"
+        },
+        {
+          "test": "Vitamin D",
+          "date": "2024-01-15",
+          "result": "25 ng/mL"
+        }
+      ],
+      "outpatient_transcript": {
+        "date": "2024-03-10",
+        "transcript": "Dr. Nelson: Hi Isabella, how have you been feeling lately?\n\nIsabella Clark: Hi Dr. Nelson, I've been feeling better overall, but I still have some days where I feel down.\n\nDr. Nelson: It's good to hear that you're feeling better. Have you noticed any specific triggers for your mood changes?\n\nIsabella Clark: Not really, it seems to vary.\n\nDr. Nelson: Let's continue with your current medication and schedule a follow-up in a few months.\n\nIsabella Clark: Okay, thank you."
+      }
+    },
+    {
+      "patient_id": "010",
+      "personal_information": {
+        "first_name": "Jack",
+        "last_name": "Roberts",
+        "date_of_birth": "1992-04-28",
+        "gender": "Male",
+        "contact": {
+          "phone": "555-654-3210",
+          "email": "jack.roberts@example.com",
+          "address": {
+            "street": "808 Maple St",
+            "city": "Greenville",
+            "state": "CA",
+            "zip_code": "90002"
+          }
+        }
+      },
+      "medical_history": {
+        "allergies": ["None"],
+        "current_medications": [
+          {
+            "name": "Albuterol",
+            "dosage": "90mcg",
+            "frequency": "As needed"
+          }
+        ],
+        "past_medications": [],
+        "chronic_conditions": ["Asthma"],
+        "surgeries": [],
+        "family_history": {
+          "father": {
+            "condition": "Asthma",
+            "age_at_diagnosis": 40
+          },
+          "mother": {
+            "condition": "High Blood Pressure",
+            "age_at_diagnosis": 50
+          }
+        },
+        "immunizations": [
+          {
+            "vaccine": "Influenza",
+            "date": "2023-10-01"
+          },
+          {
+            "vaccine": "COVID-19",
+            "date": "2021-04-01"
+          }
+        ]
+      },
+      "visits": [
+        {
+          "date": "2024-02-20",
+          "doctor": "Dr. Patel",
+          "reason": "Asthma management",
+          "notes": "Symptoms under control, continue as needed medication."
+        },
+        {
+          "date": "2023-08-10",
+          "doctor": "Dr. Patel",
+          "reason": "Annual check-up",
+          "notes": "No concerns."
+        }
+      ],
+      "labs_and_tests": [
+        {
+          "test": "Pulmonary Function Test (PFT)",
+          "date": "2024-01-25",
+          "result": "Forced Expiratory Volume (FEV1): 80% predicted"
+        },
+        {
+          "test": "Allergy Testing",
+          "date": "2023-07-15",
+          "result": "Positive for dust mites and pollen"
+        }
+      ],
+      "outpatient_transcript": {
+        "date": "2024-02-20",
+        "transcript": "Dr. Patel: Hi Jack, how have you been managing your asthma?\n\nJack Roberts: Hi Dr. Patel, I've been using the Albuterol inhaler when needed, and it seems to help.\n\nDr. Patel: That's good. Have you noticed any specific triggers for your asthma attacks?\n\nJack Roberts: Not really, but it tends to worsen during allergy season.\n\nDr. Patel: Let's continue with your current treatment plan and monitor your symptoms closely.\n\nJack Roberts: Okay, thank you."
+      }
+  }
+]

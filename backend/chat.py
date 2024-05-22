@@ -1,6 +1,6 @@
-import google.generativeai as genai
-from pymongo import MongoClient
-from hume import HumeVoiceClient, MicrophoneInterface
+# import google.generativeai as genai
+# from pymongo import MongoClient
+# from hume import HumeVoiceClient, MicrophoneInterface
 import os
 from system import System
 from datetime import datetime
@@ -10,9 +10,9 @@ import json
 from dotenv import load_dotenv
 from record import Record
 import subprocess
-from azure.ai.resources.client import AIClient
-from azure.identity import DefaultAzureCredential
-import openai
+# from azure.ai.resources.client import AIClient
+# from azure.identity import DefaultAzureCredential
+# import openai
 
 load_dotenv(override=True)
 DATABASE_SERVICE = os.getenv("DATABASE_SERVICE")
