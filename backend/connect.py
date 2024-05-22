@@ -2,11 +2,8 @@ import os
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 from langchain.chains import RetrievalQA
-# from langchain_community.llms import Bedrock
 from langchain_community.retrievers import AmazonKnowledgeBasesRetriever
 from langchain_aws import BedrockLLM
-from langchain_community.llms import Bedrock
-from langchain_community.chat_models import BedrockChat
 
 # Load environment variables from .env file
 load_dotenv()
@@ -55,8 +52,12 @@ app = Flask(__name__)
 @app.route('/ask', methods=['POST'])
 def ask():
     data = request.json
-    query = data.get('query', '')
-    
+    input = data.get('query', '')
+    query = f"Your main task is to find similar patients from conversation transcript that \
+        will be give below who have the same medical condition form the vector database where \
+            the data is stored in json. First return the most similar documents from the dataset \
+                in json format. Secondly return why you thought the patients are similar. \
+                    Please return everything in JSON format. Converasation Transcript {input}"
     if not query:
         return jsonify({'error': 'Query is required'}), 400
     
@@ -67,8 +68,4 @@ def ask():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    # app.run(debug=True)
-    input = "i have red eyes"
-    query = f"Your main task is to find similar patients from conversation transcript that will be give below who have the same medical condition form the vector database where the data is stored in json. First return the most similar documents from the dataset in json format. Secondly return why you thought the patients are similar. Please return everything in JSON format. Converasation Transcript {input}"
-    output = qa.invoke(query)
-    print(output)
+    app.run(debug=True)
